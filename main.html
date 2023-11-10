@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="main.css">
-	<script src="chat.js"></script>
-</head>
-<body>
-    <div class="mainbar">
-        <div id="name">
-            Chomyeon
-        </div>
-        <div class="buttons">
-            <button id="Chatting">Chatting</button>
-            <button id="About">About</button>
-            <button id="Contract">Contract</button>
-            <button id="logOut">Log out</button>
-        </div>
-    </div>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<script src="chat.js"></script>
 
-    <div class="main">
-        <div class="content">
-            <video width="400" height="300" controls>
-                <source src="guitar.mp4" type="video/mp4">
-            </video>
-            <div id="chat-container">
-                <div id="chat-messages"></div>
-            </div>
-        </div>
-    </div>
-</body>
+		<script defer src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+		<meta charset="UTF-8" />
+		<title>HTML video tag - autoplay attribute</title>
+	</head>
+	<body>
+		<div class="mainbar">
+			<div id="name">Chomyeon</div>
+			<div class="buttons">
+				<button id="Chatting">Chatting</button>
+				<button id="About">About</button>
+				<button id="Contract">Contract</button>
+				<button id="logOut">Log out</button>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="content">
+				<video id="video-streaming" width="400" height="300" muted autoplay>
+					<source src="guitar.mp4" type="video/mp4" />
+				</video>
+				<div id="chat-container">
+					<div id="chat-messages"></div>
+				</div>
+			</div>
+		</div>
+		<div class="controls">
+			<button id="recordButton">Speech</button>
+			<button id="stopButton" disabled>To text</button>
+		</div>
+		<script src="index.js"></script>
+	</body>
 </html>
