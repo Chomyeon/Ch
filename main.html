@@ -19,11 +19,13 @@
 
     <div class="main">
         <div class="content">
-            <video width="400" height="300" controls>
+            <video controls>
                 <source src="guitar.mp4" type="video/mp4">
             </video>
             <div id="chat-container">
                 <div id="chat-messages"></div>
+                    <input type="text" id="chat-input" placeholder="Type your message...">
+                    <button id="send" onclick="sendMessage()">Send</button>
             </div>
         </div>
     </div>
