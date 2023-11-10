@@ -1,0 +1,140 @@
+body {
+  background-color: #f8fafd;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mainbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 17px;
+  font-size: 18px;
+}
+
+#name {
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+#Chatting,
+#About,
+#Contract {
+  height: 55px;
+  border: none;
+  background-color: #f8fafd;
+  font-size: 16px;
+  margin-right: 24px;
+}
+/* 마우스를 올렸을 때의 스타일 */
+.buttons button:hover {
+  background-color: black; /* 안됨...*/
+  color: #007bff; /* 버튼 텍스트 색상 변경 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* #logOut에 대한 추가적인 스타일을 지정할 수 있습니다. */
+#logOut {
+  background-color: #d3e3fd;
+  color: #062e6f;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  width: 100px;
+  height: 55px;
+  margin-right: 30px;
+  border-radius: 4px;
+}
+
+#logOut:hover {
+  background-color: #8298ba; /* 어두운 파란색 */
+  color: #062e6f; /* 버튼 텍스트 색상 변경 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content {
+  display: flex;
+  border-radius: 10px;
+}
+
+/* 동영상에 대한 스타일을 지정합니다. */
+video {
+  width: 55%; /* 동영상의 가로 크기를 화면의 80%로 설정합니다. */
+  height: 600px;
+  margin-top: 60px;
+  margin-left: 10%;
+  background-color: gainsboro;
+}
+
+/********************************************************/
+#chat-container {
+  width: 25%;
+  height: 600px;
+  margin-top: 60px;
+  border: 3px;
+  border-color: grey;
+  /* max-width: 600px;
+  margin: 20px auto; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+}
+.chat-container {
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.message-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.send-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.user {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#end {
+  width: 10%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #d3e3fd;
+  font-size: 23px;
+  color: #062e6f;
+  font-weight: bolder;
+  margin-left: 48%;
+  margin-top: 20px; /* 조정 필요한 값 */
+}
+
+#end:hover {
+  background-color: #8298ba; /* 어두운 파란색 */
+  color: #062e6f; /* 버튼 텍스트 색상 변경 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

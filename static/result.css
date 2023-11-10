@@ -1,0 +1,48 @@
+body {
+  background-color: #f8fafd;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mainbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 17px;
+  font-size: 18px;
+}
+
+#name {
+  font-weight: bold;
+  font-size: 25px;
+  /* #name에 대한 추가적인 스타일을 지정할 수 있습니다. */
+}
+
+#Chatting,
+#About,
+#Contract {
+  border: none;
+  background: none;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+/* #logOut에 대한 추가적인 스타일을 지정할 수 있습니다. */
+#logOut {
+  background-color: #d3e3fd;
+  color: #062e6f;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  width: 100px;
+  height: 55px;
+}
+
+.content {
+  border: 1px solid rgb(188, 183, 183);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
-	<script src="chat.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/main.css">
+    <script src="../static/chat.js"></script>
 </head>
 <body>
     <div class="mainbar">
@@ -19,13 +19,18 @@
 
     <div class="main">
         <div class="content">
-            <video width="400" height="300" controls>
-                <source src="guitar.mp4" type="video/mp4">
+            <video width="55%" height="600px" controls>
+                <source src="../guitar.mp4" type="video/mp4">
             </video>
             <div id="chat-container">
                 <div id="chat-messages"></div>
+                <div>
+                    <input type="text" id="chat-input" placeholder="메시지를 입력하세요...">
+                    <button id="send"onclick="sendMessage()">↑</button>
+                </div>
             </div>
         </div>
+        <button id="end" onclick="location.href='result.html'">종료하기</div>
     </div>
 </body>
 </html>
